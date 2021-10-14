@@ -1,0 +1,28 @@
+.conteiner-banderas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bandera-argentina, .bandera-chile, .bandera-peru, .bandera-venezuela {
+  height: 24px;
+  width: 24px;
+  background-image: url(../assets/img/flags.png);
+  background-repeat: no-repeat;
+}
+
+.bandera-venezuela {
+  background-position: 0 0;
+}
+
+.bandera-peru {
+  background-position: -24px 0;
+}
+
+.bandera-chile {
+  background-position: -48px 0;
+}
+
+.bandera-argentina {
+  background-position: -72px 0;
+}
