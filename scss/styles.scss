@@ -1,0 +1,22 @@
+$ancho-bandera: 24px;
+$alto-bandera: 24px;
+$x: 0;
+$background-banderas: url(../assets/img/flags.png);
+$banderas: (venezuela, peru, chile, argentina);
+
+.conteiner-banderas {
+  display: flex;
+}
+%bandera {
+  height: 24px;
+  width: 24px;
+  background-image: $background-banderas;
+  background-repeat: no-repeat;
+}
+@each $bandera in $banderas {
+  .bandera-#{$bandera} {
+    @extend %bandera;
+    background-position: $x 0;
+  }
+  $x: ($x + $ancho-bandera * -1);
+}
